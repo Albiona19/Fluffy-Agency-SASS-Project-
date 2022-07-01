@@ -57,6 +57,25 @@ margin: 0 auto;
             font-size: 1.4rem;
             line-height: 1.2rem;
         }
+        &__main-nav-link::after {
+            content: "";
+             position: absolute;
+             height: 2px;
+             width: 0;
+             left: 0;
+             bottom: -3px;
+             background-color: $light-orange;
+             transition: all 0.5s ease-in-out;
+         }
+           
+         &__main-nav-link:hover::after {
+           width: 100%;
+           transform: scale(1.1);
+         }
+         &__main-nav-link:hover{
+
+            color: $light-orange;
+         }
     }
 
 
@@ -65,8 +84,45 @@ margin: 0 auto;
     background-color: $near-white;
     &__inner-content{
          display: flex;
+         gap: 13rem;
          align-items: center;
          padding-bottom: 18.8rem;
          @extend %margin-content;
+    }
+    &__sub{
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        color: $dark-blue;
+        margin-bottom: 0.5rem;
+    }
+    h1{
+        font-weight: 700;
+        font-size: 4.6rem;
+        line-height: 6.2rem;
+        color: $dark;
+        margin-bottom: 1rem;
+    }
+    &__paragraph{
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.7rem;
+        color: $dark;
+        margin-bottom: 2rem;
+    }
+    &__link{
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+        color: #fff;
+        margin-bottom: 2rem;
+        padding: 1.9rem 4.2rem;
+        display: inline-block;
+        background-color: $light-orange;
+     }
+    &__link:hover{
+        transform: scale(0.9);
+        color: $dark;
     }
 }
