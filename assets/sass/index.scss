@@ -1,6 +1,16 @@
 @use 'font';
 @use 'reset';
 
+$white:#ffffff;
+$black:#000000;
+$dark-blue:#2557AB;
+$dark:#13253A;
+$light-orange:#FF7F57;
+$near-white:#F4F6F7;
+
+
+
+
 :root{
     font-family: font.$font-family;
     font-size: 10px;
