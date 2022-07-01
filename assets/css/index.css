@@ -108,6 +108,7 @@ table {
 
 .banner {
   background-color: #F4F6F7;
+  border-bottom: 1px solid #DCE2E6;
 }
 .banner__inner-content {
   display: flex;
@@ -150,6 +151,10 @@ table {
 .banner__link:hover {
   transform: scale(0.9);
   color: #13253A;
+}
+
+.our-services {
+  background-color: #F2F2F2;
 }
 
 /*# sourceMappingURL=index.css.map */

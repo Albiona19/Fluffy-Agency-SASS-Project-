@@ -7,6 +7,8 @@ $dark-blue:#2557AB;
 $dark:#13253A;
 $light-orange:#FF7F57;
 $near-white:#F4F6F7;
+$white-n: #F2F2F2;
+$bottom-border:#DCE2E6;
 
 
 //max-width-margin of contents %margin-content extend in classes
@@ -82,6 +84,7 @@ margin: 0 auto;
 // Banner Style
 .banner{
     background-color: $near-white;
+    border-bottom: 1px solid $bottom-border;
     &__inner-content{
          display: flex;
          gap: 13rem;
@@ -120,9 +123,12 @@ margin: 0 auto;
         padding: 1.9rem 4.2rem;
         display: inline-block;
         background-color: $light-orange;
-     }
-    &__link:hover{
+    }
+     &__link:hover{
         transform: scale(0.9);
         color: $dark;
     }
+}
+.our-services{
+    background-color: $white-n;
 }
