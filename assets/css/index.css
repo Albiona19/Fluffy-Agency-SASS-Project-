@@ -52,11 +52,10 @@ table {
   border-spacing: 0;
 }
 
-.header__inner-content {
+.banner__inner-content, .header__inner-content {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
-  padding: 4rem 0 14.5rem 0;
 }
 
 :root {
@@ -73,22 +72,30 @@ table {
   justify-content: space-between;
   align-items: center;
 }
-
-.main-nav__list {
+.header__main-nav-list {
   display: flex;
 }
-.main-nav__item {
+.header__main-nav-item {
   display: flex;
   justify-content: space-between;
   margin: auto 2.5rem auto 2.5rem;
 }
-.main-nav__link {
+.header__main-nav-link {
   position: relative;
   text-decoration: none;
   color: #13253A;
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.2rem;
+}
+
+.banner {
+  background-color: #F4F6F7;
+}
+.banner__inner-content {
+  display: flex;
+  align-items: center;
+  padding-bottom: 18.8rem;
 }
 
 /*# sourceMappingURL=index.css.map */

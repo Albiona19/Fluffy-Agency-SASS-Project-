@@ -15,7 +15,6 @@ $near-white:#F4F6F7;
 max-width: 1170px;
 width: 100%;
 margin: 0 auto;
-padding: 4rem 0 14.5rem 0;
 
 }
 
@@ -41,23 +40,33 @@ padding: 4rem 0 14.5rem 0;
 
     @extend %margin-content;
   }
-}
-.main-nav{
-    &__list{
-        display: flex;
-    }
-    &__item{
-        display: flex;
-        justify-content: space-between;
-        margin: auto 2.5rem auto 2.5rem;
-    }
-    &__link{
-        position: relative;
-        text-decoration: none;
-        color: $dark;
-        font-weight: 600;
-        font-size: 1.4rem;
-        line-height: 1.2rem;
-    }
-}
 
+        &__main-nav-list{
+         display: flex;
+        }
+        &__main-nav-item{
+            display: flex;
+            justify-content: space-between;
+            margin: auto 2.5rem auto 2.5rem;
+        }
+        &__main-nav-link{
+            position: relative;
+            text-decoration: none;
+            color: $dark;
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 1.2rem;
+        }
+    }
+
+
+// Banner Style
+.banner{
+    background-color: $near-white;
+    &__inner-content{
+         display: flex;
+         align-items: center;
+         padding-bottom: 18.8rem;
+         @extend %margin-content;
+    }
+}
