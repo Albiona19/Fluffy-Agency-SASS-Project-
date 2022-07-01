@@ -42,7 +42,7 @@ margin: 0 auto;
     align-items: center;
 
     @extend %margin-content;
-  }
+    }
 
         &__main-nav-list{
          display: flex;
@@ -60,29 +60,22 @@ margin: 0 auto;
             font-size: 1.4rem;
             line-height: 1.2rem;
         
-        &:hover{
-        &::after {
-            content: "";
-             position: absolute;
-             height: 2px;
-             width: 0;
-             left: 0;
-             bottom: -3px;
-             background-color: $light-orange;
-             transition: all 0.5s ease-in-out;
-             
-
-            
-        }
-           
-         &::after {
-           width: 100%;
-           
-
-         }
-        
-         &:hover{
-             color: $light-orange;
+            &:hover{
+            &::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 0;
+                left: 0;
+                bottom: -3px;
+                background-color: $light-orange;
+                transition: 0.5s all ease-in-out;
+            } 
+            &::after {
+            width: 100%;
+            }
+            &:hover{
+                 color: $light-orange;
             }
         }
     }
@@ -226,4 +219,63 @@ margin: 0 auto;
     line-height: 2.2rem;
     color: $dark-blue;
   }
+}
+.about-us{
+    padding: 10rem 0 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $bottom-border;
+    margin-bottom: 10rem;
+    @extend %margin-content;
+    &__sub-heading{
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: $dark-blue;
+    }
+    &__heading{
+        font-weight: 700;
+        font-size: 3.8rem;
+        line-height: 5.2rem;
+        margin-bottom: 3rem;
+        color: $dark;
+    }
+    &__description{
+        display: flex;
+        gap: 3rem;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    &__description__what-we-do p:first-child {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 2rem;
+        line-height: 3rem;
+        color: $dark;
+        margin-bottom: 3rem;
+    }
+    &__description__what-we-do{
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.7rem;
+        color: $dark;
+        margin-right: 1.5rem;
+        padding-bottom: 4.7rem;
+    }
+    &__description__lorem{
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.7rem;
+        color: $dark;
+    }
+    &__layout{
+        display: flex;
+    }
+    &__list{
+        display: flex;
+        gap: 7rem;
+        align-items: center;
+    }
 }
