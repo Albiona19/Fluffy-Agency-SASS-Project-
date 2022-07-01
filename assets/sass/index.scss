@@ -9,9 +9,47 @@ $light-orange:#FF7F57;
 $near-white:#F4F6F7;
 
 
+//max-width-margin of contents %margin-content extend in classes
 
+%margin-content{
+max-width: 1170px;
+width: 100%;
+margin: 0 auto;
+
+}
+
+
+%button{
+    background-color: white;
+    border: none;
+}
 
 :root{
     font-family: font.$font-family;
     font-size: 10px;
+}
+.header__inner-content{
+    padding: 4rem 0 14.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %margin-content;
+}
+.main-nav{
+    &__list{
+        display: flex;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        margin: auto 2.5rem auto 2.5rem;
+    }
+    &__link{
+        position: relative;
+        text-decoration: none;
+        color: $dark;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 1.2rem;
+    }
 }
