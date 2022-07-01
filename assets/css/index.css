@@ -52,7 +52,7 @@ table {
   border-spacing: 0;
 }
 
-.about-us, .costumer__inner-content, .our-services__inner-content, .banner__inner-content, .header__inner-content {
+.about-us__container, .costumer__inner-content, .our-services__inner-content, .banner__inner-content, .header__inner-content {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
@@ -236,12 +236,17 @@ table {
 }
 
 .about-us {
-  padding: 10rem 0 10rem 0;
+  background-color: #F2F2F2;
+  padding: 5rem 0 5rem 0;
+}
+.about-us__container {
+  background-color: #ffffff;
   display: flex;
+  gap: 3rem;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid #DCE2E6;
-  margin-bottom: 10rem;
+  border-bottom: 4px solid #DCE2E6;
+  padding: 10rem 0 10rem 0;
 }
 .about-us__sub-heading {
   font-weight: 500;
@@ -257,11 +262,13 @@ table {
   color: #13253A;
 }
 .about-us__description {
+  width: 67%;
   display: flex;
   gap: 3rem;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3rem;
+  padding: 0 20rem 0 20rem;
 }
 .about-us__description__what-we-do p:first-child {
   font-weight: 400;
@@ -269,6 +276,7 @@ table {
   font-size: 2rem;
   line-height: 3rem;
   color: #13253A;
+  width: 400px;
   margin-bottom: 3rem;
 }
 .about-us__description__what-we-do {
@@ -285,13 +293,27 @@ table {
   line-height: 2.7rem;
   color: #13253A;
 }
+.about-us__description__lorem p:first-child {
+  margin-bottom: 3rem;
+}
 .about-us__layout {
   display: flex;
+  margin-bottom: 10rem;
 }
 .about-us__list {
   display: flex;
   gap: 7rem;
   align-items: center;
+}
+
+.info {
+  background-color: #F2F2F2;
+}
+.info__text-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 5rem;
 }
 
 /*# sourceMappingURL=index.css.map */
