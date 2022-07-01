@@ -64,6 +64,9 @@ table {
   font-size: 10px;
 }
 
+.header {
+  background-color: #F4F6F7;
+}
 .header__inner-content {
   padding: 4rem 0 14.5rem 0;
   display: flex;
