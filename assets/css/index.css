@@ -52,7 +52,7 @@ table {
   border-spacing: 0;
 }
 
-.our-services__inner-content, .banner__inner-content, .header__inner-content {
+.costumer__inner-content, .our-services__inner-content, .banner__inner-content, .header__inner-content {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
@@ -88,7 +88,7 @@ table {
   font-size: 1.4rem;
   line-height: 1.2rem;
 }
-.header__main-nav-link::after {
+.header__main-nav-link:hover::after {
   content: "";
   position: absolute;
   height: 2px;
@@ -100,9 +100,8 @@ table {
 }
 .header__main-nav-link:hover::after {
   width: 100%;
-  transform: scale(1.1);
 }
-.header__main-nav-link:hover {
+.header__main-nav-link:hover:hover {
   color: #FF7F57;
 }
 
@@ -205,6 +204,35 @@ table {
   margin-bottom: 0.5rem;
   color: #13253A;
   text-align: center;
+}
+
+.costumer {
+  background-color: #F2F2F2;
+  padding: 6rem 0 6rem 0;
+}
+.costumer__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.costumer__item__unit {
+  font-weight: 400;
+  font-size: 4.6rem;
+  line-height: 6.3rem;
+  color: #13253A;
+}
+.costumer span {
+  color: #FF7F57;
+  cursor: pointer;
+}
+.costumer span:hover {
+  color: #2557AB;
+}
+.costumer__item__text {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #2557AB;
 }
 
 /*# sourceMappingURL=index.css.map */
