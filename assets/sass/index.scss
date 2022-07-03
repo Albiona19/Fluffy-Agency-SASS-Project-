@@ -9,6 +9,7 @@ $light-orange:#FF7F57;
 $near-white:#F4F6F7;
 $white-n: #F2F2F2;
 $bottom-border:#DCE2E6;
+$footer-color:#11364E;
 
 
 
@@ -132,8 +133,9 @@ margin: 0 auto;
 }
 .our-services{
     background-color: $white-n;
-    @extend %margin-content;
     &__inner-content{
+        @extend %margin-content;
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -192,9 +194,11 @@ margin: 0 auto;
 }
 .costumer{
    background-color: $white-n;
-    padding: 6rem 0 6rem 0;
   &__inner-content{
     @extend %margin-content;
+    padding: 6rem 0 6rem 0;
+
+
   }
   &__list{
     display: flex;
@@ -223,16 +227,16 @@ margin: 0 auto;
   }
 }
 .about-us{
-   
+   background-color: $white-n;
     &__container{
-    background-color: $white;
-    display: flex;
-    gap: 3rem;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 4px solid $bottom-border;
-    padding: 10rem 0 10rem 0;
-    @extend %margin-content;
+        background-color: $white;
+        display: flex;
+        gap: 6rem;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 4px solid $bottom-border;
+        padding: 10rem 0 10rem 0;
+        @extend %margin-content;
     }
     &__sub-heading{
         font-weight: 500;
@@ -293,7 +297,7 @@ margin: 0 auto;
     }
 }
 .info{
-    
+    background-color: $white-n;
     &__container{
         @extend %margin-content;
         background-color: $white;
@@ -335,3 +339,139 @@ margin: 0 auto;
 
    
 }
+.started{
+    background-color: $light-orange;
+    &__inner-content{
+        text-align: center;
+        padding: 10rem 0 10rem 0;
+        @extend %margin-content;
+    }
+    &__sub-heading{
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        margin-bottom: 0.5rem;
+        color: $white;
+    }
+    &__heading{
+        font-weight: 700;
+        font-size: 4.6rem;
+        line-height: 6.3rem;
+        margin-bottom: 1rem;
+        color: $white;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.7rem;
+        margin-bottom: 3rem;
+        width: 90%;
+        color: $white;
+    }
+    &__link{
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+        padding: 1.9rem 10.2rem;
+        color: $white;
+        background-color: $dark-blue;
+        box-shadow: 2px 47px 21px -25px rgba(0, 0, 0, 0.44);
+    
+        &:hover{
+            transform: scale(1.1);
+            background-color: $dark;
+            color: $light-orange;
+        }
+    
+    }
+    
+}
+.footer-bg{
+    background-color: $footer-color;
+   
+    .footer{
+        @extend %margin-content;
+        padding: 14rem 0 14rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+
+        &__contact-heading{
+            font-weight: 400;
+            font-size: 3.8rem;
+            line-height: 5.2rem;
+            text-align: center;
+            color: $white;
+            margin-bottom: 3rem;
+        }
+        &__form__item{
+            width: 37rem;
+             margin-bottom: 4rem;
+        }
+        &__form__label{
+            display: flex;
+            flex-direction: column;
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+            color: $white;
+            padding-bottom: 1rem;
+        }
+        &__form__input{
+            background-color: inherit;
+            font-size: 1.6rem;
+            line-height: 2.1rem;
+            font-weight: 500;
+            color: $white;
+            border-bottom: 1px solid $white;
+            opacity: 0.25;
+            width: 100%;
+
+        }
+        &__form__item{
+            width: 37rem;
+            margin-bottom: 4rem;
+            }
+            &__form__text-area{
+                border-bottom: 1px solid $white;
+                font-size: 1.6rem;
+                line-height: 2.1rem;
+                font-weight: 500;
+                color: $white;
+                width: 100%;
+                opacity: 0.25;
+            }
+            &__copy-right{
+                font-weight: 400;
+                font-size: 1.2rem;
+                line-height: 1.7rem;
+                text-align: center;
+                color: $white;
+                padding: 1.6rem 0 1.6rem 0;
+                background: $dark;
+            }
+    }
+
+        
+}
+.footer-contact__button{
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    padding: 1.9rem 10rem;
+    color: $white;
+    background: $light-orange;
+    border: none;
+
+    &:hover{
+        color: $white;
+        background-color: $dark-blue;
+    }
+  
+}
+
+
+    
