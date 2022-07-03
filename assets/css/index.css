@@ -52,7 +52,7 @@ table {
   border-spacing: 0;
 }
 
-.about-us__container, .costumer__inner-content, .our-services__inner-content, .banner__inner-content, .header__inner-content {
+.info__container, .about-us__container, .costumer__inner-content, .our-services__inner-content, .banner__inner-content, .header__inner-content {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
@@ -237,7 +237,6 @@ table {
 
 .about-us {
   background-color: #F2F2F2;
-  padding: 5rem 0 5rem 0;
 }
 .about-us__container {
   background-color: #ffffff;
@@ -266,9 +265,7 @@ table {
   display: flex;
   gap: 3rem;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 3rem;
-  padding: 0 20rem 0 20rem;
 }
 .about-us__description__what-we-do p:first-child {
   font-weight: 400;
@@ -309,11 +306,39 @@ table {
 .info {
   background-color: #F2F2F2;
 }
+.info__container {
+  background-color: #ffffff;
+  display: flex;
+  gap: 10rem;
+  padding: 10rem 0 10rem 0;
+}
 .info__text-part {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-right: 5rem;
+}
+.info__text-part__heading {
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 5.2rem;
+  margin-bottom: 2rem;
+  color: #13253A;
+  width: 75%;
+}
+.info__text-part__text {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  margin-bottom: 2rem;
+  color: #13253a;
+}
+.info__text-part__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info__text-part__item {
+  margin: 1.2rem 0 1.2rem 0;
 }
 
 /*# sourceMappingURL=index.css.map */
