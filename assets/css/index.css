@@ -523,6 +523,7 @@ table {
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
+    padding: 3rem;
     align-items: center;
   }
   .info__container {
