@@ -596,6 +596,9 @@ table {
     line-height: 2.4rem;
     padding: 0.9rem 7.2rem;
   }
+  .footer-contact__button {
+    padding: 0.6rem 2rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
