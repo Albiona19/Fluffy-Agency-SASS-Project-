@@ -182,7 +182,9 @@ table {
 }
 .our-services__layout {
   display: flex;
-  width: 80%;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
 }
 .our-services__item {
   display: flex;
@@ -503,7 +505,7 @@ table {
     display: flex;
     gap: 5rem;
     justify-content: space-between;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 0 0rem 0 4rem;
   }
   .info__text-part__heading {
@@ -547,14 +549,11 @@ table {
 }
 @media screen and (max-width: 480px) {
   .header__inner-content {
-    display: flex;
-    gap: 3rem;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
+    gap: 20px;
     position: sticky;
     top: 0;
-    background: #e4e4f4;
+    background: #fff;
     padding: 20px 0 40px 0;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
   }
