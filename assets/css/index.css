@@ -530,7 +530,6 @@ table {
     background-color: #ffffff;
     display: flex;
     gap: 10rem;
-    padding: 10rem 0 10rem 0;
     flex-direction: column-reverse;
   }
   .info__text-part__text {
