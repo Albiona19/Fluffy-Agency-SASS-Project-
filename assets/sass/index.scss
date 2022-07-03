@@ -493,6 +493,9 @@ margin: 0 auto;
                 gap: 2rem;
                 align-items: center;
             }
+            &__image{
+                width: 70%;
+            }
         }
         .our-services{
             &__layout{
@@ -505,6 +508,21 @@ margin: 0 auto;
         }
     }
         
+    @media screen and(max-width:740px) {
+        .costumer{
+            &__list{
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                align-items: center;
+                gap: 3rem;
+            }
+            &__item__unit{
+                text-align: center;
+            }
+        }
+        
+    }
     
 
 
