@@ -130,6 +130,9 @@ margin: 0 auto;
         transform: scale(0.9);
         color: $dark;
     }
+    &__image{
+        max-width: 100%;
+    }
 }
 .our-services{
     background-color: $white-n;
@@ -491,35 +494,19 @@ margin: 0 auto;
                 align-items: center;
             }
         }
+        .our-services{
+            &__layout{
+                flex-direction: column;
+            }
+            &__heading{
+                width: 66%;
+                text-align: center;
+            }
+        }
     }
         
     
 
-    @media screen and(max-width:590px) {
-        .banner{
-            &__image{
-                width: 80%;
-            }
-        
-        &__link{
-            padding: 0.9rem 0.2rem;
-            display: inline-block;
-            background-color: #FF7F57;
-            border-radius: -16%;
-            border: 1px solid blue;
-            width: 79%;
-            text-align: center;
-        
-        }
-        &__paragraph{
-            width: 80%;
-         }
-        & h1{
-            width: 80%;
-        }
-    }
-
-}
 
 
     @media screen and (max-width:480px) {
