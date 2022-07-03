@@ -504,9 +504,12 @@ table {
   .about-us__description {
     display: flex;
     gap: 5rem;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 0rem 0 4rem;
+    justify-content: center;
+    /* padding: 0 0rem 0 4rem; */
+    flex-direction: column;
+    width: 80%;
+    align-content: center;
+    align-items: center;
   }
   .info__text-part__heading {
     font-weight: 700;
@@ -547,7 +550,7 @@ table {
     text-align: center;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .header__inner-content {
     flex-direction: column;
     gap: 20px;
@@ -566,6 +569,8 @@ table {
     color: #1d29bf;
     width: 50%;
   }
+}
+@media screen and (max-width: 480px) {
   .banner__image {
     width: 79%;
     padding: 3rem;
@@ -582,6 +587,26 @@ table {
   }
   .banner h1 {
     width: 58%;
+  }
+  .started__heading {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 6.3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  .started__text {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    margin-bottom: 3rem;
+    width: 90%;
+    color: #ffffff;
+  }
+  .started__link {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    padding: 0.9rem 7.2rem;
   }
 }
 

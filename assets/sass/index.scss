@@ -527,9 +527,12 @@ margin: 0 auto;
         .about-us__description{
             display: flex;
             gap: 5rem;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            padding: 0 0rem 0 4rem;
+            justify-content: center;
+            /* padding: 0 0rem 0 4rem; */
+            flex-direction: column;
+            width: 80%;
+            align-content: center;
+            align-items: center;
         }
         .info{
             &__text-part__heading{
@@ -577,11 +580,8 @@ margin: 0 auto;
         }
         
     }
-    
 
-
-
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:600px) {
         .header{
             &__inner-content{
                
@@ -609,6 +609,13 @@ margin: 0 auto;
     
         
     }
+        
+    }
+    
+
+
+
+    @media screen and (max-width:480px) {
         .banner{
             
             &__image{
@@ -631,5 +638,27 @@ margin: 0 auto;
                 }
     
       
+    }
+    .started{
+        &__heading{
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 6.3rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        &__text{
+            font-weight: 400;
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+            margin-bottom: 3rem;
+            width: 90%;
+            color: #ffffff;
+        }
+        &__link{
+            font-size: 1.7rem;
+            line-height: 2.4rem;
+            padding: 0.9rem 7.2rem;
+        }
     }
 }
