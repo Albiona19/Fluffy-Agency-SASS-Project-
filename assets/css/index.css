@@ -498,7 +498,6 @@ table {
     flex-direction: column;
   }
   .our-services__heading {
-    width: 66%;
     text-align: center;
   }
   .about-us__description {
@@ -507,7 +506,6 @@ table {
     justify-content: center;
     /* padding: 0 0rem 0 4rem; */
     flex-direction: column;
-    width: 80%;
     align-content: center;
     align-items: center;
   }
@@ -518,7 +516,6 @@ table {
     margin-bottom: 2rem;
     color: #13253A;
     text-align: center;
-    width: 99%;
   }
   .info__text-part {
     display: flex;
@@ -567,7 +564,6 @@ table {
   }
   .header__main-nav-link {
     color: #1d29bf;
-    width: 50%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -579,14 +575,7 @@ table {
     padding: 0.9rem 0.2rem;
     display: inline-block;
     background-color: #FF7F57;
-    width: 65%;
     border: 1px solid blue;
-  }
-  .banner__paragraph {
-    width: 61%;
-  }
-  .banner h1 {
-    width: 58%;
   }
   .started__heading {
     font-weight: 700;
@@ -600,7 +589,6 @@ table {
     font-size: 1.3rem;
     line-height: 1.7rem;
     margin-bottom: 3rem;
-    width: 90%;
     color: #ffffff;
   }
   .started__link {
