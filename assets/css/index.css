@@ -115,6 +115,9 @@ table {
   align-items: center;
   padding-bottom: 18.8rem;
 }
+.banner__textual {
+  padding: 2rem;
+}
 .banner__sub {
   font-weight: 500;
   font-size: 1.6rem;
@@ -155,9 +158,6 @@ table {
   max-width: 100%;
 }
 
-.our-services {
-  background-color: #F2F2F2;
-}
 .our-services__inner-content {
   display: flex;
   flex-direction: column;
@@ -240,9 +240,6 @@ table {
   color: #2557AB;
 }
 
-.about-us {
-  background-color: #F2F2F2;
-}
 .about-us__container {
   background-color: #ffffff;
   display: flex;
@@ -309,9 +306,6 @@ table {
   align-items: center;
 }
 
-.info {
-  background-color: #F2F2F2;
-}
 .info__container {
   background-color: #ffffff;
   display: flex;
@@ -480,6 +474,9 @@ table {
   }
 }
 @media screen and (max-width: 990px) {
+  .banner {
+    background-color: #F4F6F7;
+  }
   .banner__inner-content {
     display: flex;
     flex-direction: column-reverse;

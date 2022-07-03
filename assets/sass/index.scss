@@ -94,6 +94,9 @@ margin: 0 auto;
          padding-bottom: 18.8rem;
          @extend %margin-content;
     }
+    &__textual{
+        padding: 2rem;
+    }
     &__sub{
         font-weight: 500;
         font-size: 1.6rem;
@@ -135,7 +138,7 @@ margin: 0 auto;
     }
 }
 .our-services{
-    background-color: $white-n;
+    
     &__inner-content{
         @extend %margin-content;
 
@@ -196,7 +199,7 @@ margin: 0 auto;
   
 }
 .costumer{
-   background-color: $white-n;
+    background-color: $white-n;
   &__inner-content{
     @extend %margin-content;
     padding: 6rem 0 6rem 0;
@@ -230,7 +233,7 @@ margin: 0 auto;
   }
 }
 .about-us{
-   background-color: $white-n;
+  
     &__container{
         background-color: $white;
         display: flex;
@@ -300,7 +303,7 @@ margin: 0 auto;
     }
 }
 .info{
-    background-color: $white-n;
+   
     &__container{
         @extend %margin-content;
         background-color: $white;
@@ -494,6 +497,7 @@ margin: 0 auto;
 
     @media screen and (max-width:990px) {
         .banner{
+            background-color: $near-white;
             &__inner-content{
                 display: flex;
                 flex-direction: column-reverse;
@@ -608,6 +612,7 @@ margin: 0 auto;
         
     }
         .banner{
+            
             &__image{
                 width: 79%;
                 padding: 3rem;
