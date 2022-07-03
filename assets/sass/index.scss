@@ -474,4 +474,35 @@ margin: 0 auto;
 }
 
 
+    @media screen and (max-width:480px) {
+        .header{
+            &__inner-content{
+               
+                display: flex;
+                gap: 3rem;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                position: sticky;
+                top: 0;
+                background: #e4e4f4;
+                padding: 20px 0 40px 0;
+                box-shadow: rgb(33 35 38 / 10%) 0px 10px 10px -10px;
+                        
+                
+            }
+            &__main-nav-list{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    
+            
+        }
+        &__main-nav-link{
+            color: #1d29bf;
+            width: 50%;
+        }
     
+        
+    }
+}
